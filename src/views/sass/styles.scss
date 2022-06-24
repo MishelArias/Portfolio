@@ -1,0 +1,15 @@
+@import "./settings/_colores";
+
+//Vista Moviles
+@media screen and (max-width: 767.90px) {
+    @import "./moviles/_vista_moviles";
+}
+
+@media screen and (min-width: 760px) and (max-width: 1199.90px){
+    @import "./tablets/_vista-tablets";
+}
+
+//vista de escritorio
+@media screen and (min-width: 1200px) {
+    @import "./escritorio/_vista_escritorio.scss";
+}

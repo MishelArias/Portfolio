@@ -1,19 +1,18 @@
-* {
+@media screen and (max-width: 767.9px) {
+  * {
     margin: 0;
     padding: 0;
     list-style-type: none;
     text-decoration: none;
     user-select: none;
-}
+  }
 
-body {
-    /* background-color: #000000; */
+  body {
     background-color: #fff;
-}
-
-/* Cabecera */
-
-#cabecera {
+    /* Cabecera */
+    /* Contenedor */
+  }
+  body #cabecera {
     width: 100%;
     height: 10rem;
     background-color: #3D0000;
@@ -22,23 +21,21 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-}
-
-#titular {
+  }
+  body #cabecera #titular {
     height: 8rem;
     width: 20%;
-    padding: .5em;
+    padding: 0.5em;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Satisfy', cursive;
+    font-family: "Satisfy", cursive;
     letter-spacing: 1px;
     font-size: 30px;
     cursor: default;
-}
-
-#navegacion {
+  }
+  body #cabecera #navegacion {
     width: 40%;
     height: 8rem;
     padding: 1em;
@@ -46,39 +43,33 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-}
-
-#navegacion #lista {
+  }
+  body #cabecera #navegacion #lista {
     width: 100%;
     height: 8rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
-}
-
-#navegacion #lista .opcion_menu {
+  }
+  body #cabecera #navegacion #lista .opcion_menu {
     margin: 1em;
-    padding: .5em;
+    padding: 0.5em;
     width: 33.33%;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     letter-spacing: 1px;
     font-size: 17px;
     cursor: pointer;
-}
-
-.opcion_menu a:visited, .opcion_menu a {
+  }
+  body #cabecera #navegacion #lista .opcion_menu a:visited,
+body #cabecera #navegacion #lista .opcion_menu a {
     color: #fff;
-}
-
-#lista .opcion_menu a:hover {
+  }
+  body #cabecera #navegacion #lista .opcion_menu a:hover {
     color: #FF0000;
-}
-
-/* Contenedor */
-
-#contenedor {
+  }
+  body #contenedor {
     background-image: url("../img/business-woman-working-on-laptop.jpg");
     background-color: white;
     background-size: cover;
@@ -89,63 +80,40 @@ body {
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.panel {
-    background-color: rgba(0, 0, 0, 0.589);
-    color: white;
-    width: 33.33%;
-    height: calc(100vh - 10rem);
+  }
+  body #contenedor #logo {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    cursor: default;
-}
-
-#logo {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-#pc {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  body #contenedor #logo #pc {
     color: #FF0000;
     font-size: 40px;
-}
-
-#pc,
-#nombre,
-#cargo {
-
-    margin: .3em;
-}
-
-#nombre,
-#cargo {
-
+  }
+  body #contenedor #logo #pc,
+body #contenedor #logo #nombre,
+body #contenedor #logo #cargo {
+    margin: 0.3em;
+  }
+  body #contenedor #logo #nombre,
+body #contenedor #logo #cargo {
     font-size: 16.5px;
     letter-spacing: 1px;
-}
-
-#cargo {
+  }
+  body #contenedor #logo #cargo {
     font-weight: 600;
-}
-
-#introduccion {
+  }
+  body #contenedor #introduccion {
     padding: 0 1em;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 17.5px;
     font-style: italic;
     letter-spacing: 1px;
     line-height: 24px;
-}
-
-#button {
+  }
+  body #contenedor .botonera #button {
     background-color: #3D0000;
     color: white;
     width: 200px;
@@ -155,7 +123,7 @@ body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
     font-size: 14px;
     cursor: pointer;
@@ -164,17 +132,356 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-}
-
-#button:hover {
+  }
+  body #contenedor .botonera #button:hover {
     background-color: #FF0000;
-}
-
-#nombre::selection,
-#cargo::selection,
-#introduccion::selection,
-#button::selection {
-
+  }
+  body #contenedor .panel {
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    width: 33.33%;
+    height: calc(100vh - 10rem);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    cursor: default;
+  }
+  body #contenedor #nombre::selection,
+body #contenedor #cargo::selection,
+body #contenedor #introduccion::selection,
+body #contenedor #button::selection {
     background-color: #3D0000;
     color: #FFF;
+  }
 }
+@media screen and (min-width: 760px) and (max-width: 1199.9px) {
+  * {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    user-select: none;
+  }
+
+  body {
+    background-color: #fff;
+    /* Cabecera */
+    /* Contenedor */
+  }
+  body #cabecera {
+    width: 100%;
+    height: 10rem;
+    background-color: #3D0000;
+    color: #F5F5F5;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body #cabecera #titular {
+    height: 8rem;
+    width: 20%;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Satisfy", cursive;
+    letter-spacing: 1px;
+    font-size: 30px;
+    cursor: default;
+  }
+  body #cabecera #navegacion {
+    width: 60%;
+    height: 8rem;
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body #cabecera #navegacion #lista {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body #cabecera #navegacion #lista .opcion_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em;
+    padding: 0.5em;
+    width: 33.33%;
+    height: auto;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 1px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  body #cabecera #navegacion #lista .opcion_menu a:visited,
+body #cabecera #navegacion #lista .opcion_menu a {
+    color: #fff;
+  }
+  body #cabecera #navegacion #lista .opcion_menu a:hover {
+    color: #FF0000;
+  }
+  body #contenedor {
+    background-image: url("../img/business-woman-working-on-laptop.jpg");
+    background-color: white;
+    background-size: cover;
+    background-attachment: scroll;
+    height: calc(100vh - 10rem);
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body #contenedor #logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  body #contenedor #logo #pc {
+    color: #FF0000;
+    font-size: 40px;
+  }
+  body #contenedor #logo #pc,
+body #contenedor #logo #nombre,
+body #contenedor #logo #cargo {
+    margin: 0.3em;
+  }
+  body #contenedor #logo #nombre,
+body #contenedor #logo #cargo {
+    font-size: 16.5px;
+    letter-spacing: 1px;
+  }
+  body #contenedor #logo #cargo {
+    font-weight: 600;
+  }
+  body #contenedor #introduccion {
+    padding: 0 1em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 17.5px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+  body #contenedor .botonera #button {
+    background-color: #3D0000;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body #contenedor .botonera #button:hover {
+    background-color: #FF0000;
+  }
+  body #contenedor .panel {
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    width: 33.33%;
+    height: calc(100vh - 10rem);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    cursor: default;
+  }
+  body #contenedor #nombre::selection,
+body #contenedor #cargo::selection,
+body #contenedor #introduccion::selection,
+body #contenedor #button::selection {
+    background-color: #3D0000;
+    color: #FFF;
+  }
+}
+@media screen and (min-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    user-select: none;
+  }
+
+  body {
+    background-color: #fff;
+    /* Cabecera */
+    /* Contenedor */
+  }
+  body #cabecera {
+    width: 100%;
+    height: 10rem;
+    background-color: #3D0000;
+    color: #F5F5F5;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body #cabecera #titular {
+    height: 8rem;
+    width: 20%;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Satisfy", cursive;
+    letter-spacing: 1px;
+    font-size: 30px;
+    cursor: default;
+  }
+  body #cabecera #navegacion {
+    width: 60%;
+    height: 8rem;
+    padding: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body #cabecera #navegacion #lista {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body #cabecera #navegacion #lista .opcion_menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em;
+    padding: 0.5em;
+    width: 33.33%;
+    height: auto;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 1px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  body #cabecera #navegacion #lista .opcion_menu a:visited,
+body #cabecera #navegacion #lista .opcion_menu a {
+    color: #fff;
+  }
+  body #cabecera #navegacion #lista .opcion_menu a:hover {
+    color: #FF0000;
+  }
+  body #contenedor {
+    background-image: url("../img/business-woman-working-on-laptop.jpg");
+    background-color: white;
+    background-size: cover;
+    background-attachment: scroll;
+    height: calc(100vh - 10rem);
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body #contenedor #logo {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  body #contenedor #logo #pc {
+    color: #FF0000;
+    font-size: 40px;
+  }
+  body #contenedor #logo #pc,
+body #contenedor #logo #nombre,
+body #contenedor #logo #cargo {
+    margin: 0.3em;
+  }
+  body #contenedor #logo #nombre,
+body #contenedor #logo #cargo {
+    font-size: 16.5px;
+    letter-spacing: 1px;
+  }
+  body #contenedor #logo #cargo {
+    font-weight: 600;
+  }
+  body #contenedor #introduccion {
+    padding: 0 1em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 17.5px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+  body #contenedor .botonera #button {
+    background-color: #3D0000;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body #contenedor .botonera #button:hover {
+    background-color: #FF0000;
+  }
+  body #contenedor .panel {
+    background-color: rgba(0, 0, 0, 0.589);
+    color: white;
+    width: 33.33%;
+    height: calc(100vh - 10rem);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    cursor: default;
+  }
+  body #contenedor #nombre::selection,
+body #contenedor #cargo::selection,
+body #contenedor #introduccion::selection,
+body #contenedor #button::selection {
+    background-color: #3D0000;
+    color: #FFF;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
