@@ -158,6 +158,25 @@ body #contenedor #button::selection {
     background-color: #3D0000;
     color: #FFF;
   }
+  body #contenedor .about-panel {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    width: calc(50% - 1em);
+    height: calc(100vh - 6rem);
+    padding: 0 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+  }
+  body #contenedor .about-panel .parrafo {
+    padding: 3em;
+    text-align: justify;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 16.5px;
+  }
 }
 @media screen and (min-width: 760px) and (max-width: 1199.9px) {
   * {
@@ -321,6 +340,25 @@ body #contenedor #button::selection {
     background-color: #3D0000;
     color: #FFF;
   }
+  body #contenedor .about-panel {
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    width: calc(50% - 1em);
+    height: calc(100vh - 6rem);
+    padding: 0 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+  }
+  body #contenedor .about-panel .parrafo {
+    padding: 3em;
+    text-align: justify;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 16.5px;
+  }
 }
 @media screen and (min-width: 1200px) {
   * {
@@ -399,7 +437,7 @@ body #cabecera #navegacion #lista .opcion_menu a {
   }
   body #contenedor {
     background-image: url("../img/business-woman-working-on-laptop.jpg");
-    background-color: #F5F5F5;
+    background-color: #3D0000;
     background-size: cover;
     background-attachment: scroll;
     height: calc(100vh - 6rem);
@@ -476,7 +514,26 @@ body #contenedor #logo #cargo {
     align-items: center;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
+    font-size: 16.5px;
     cursor: default;
+  }
+  body #contenedor .panel .img-perfil {
+    width: 12.5em;
+    height: 12.5em;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  body #contenedor .panel .parrafo {
+    padding: 0 1em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15.3px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin: 0.6666666667em;
   }
   body #contenedor #nombre::selection,
 body #contenedor #cargo::selection,

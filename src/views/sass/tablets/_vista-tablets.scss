@@ -195,5 +195,26 @@ body {
             background-color: #3D0000;
             color: #FFF;
         }
+
+        .about-panel {
+            background-color: $negro-transparencia;
+            color: white;
+            width: calc($ancho-completo / 2 - 1em);
+            height: calc($alto-completo - $altura-cabecera);
+            padding: 0 1em;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+    
+            .parrafo{
+                padding: 3em;
+                text-align: justify;
+                font-family: $fuente-cuerpo;
+                font-weight: $letra-bold;
+                font-size: $letra-logo;
+            }
+        }
     }
 }

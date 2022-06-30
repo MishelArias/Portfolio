@@ -1,7 +1,7 @@
 #contenedor {
 
     background-image: url("../img/business-woman-working-on-laptop.jpg");
-    background-color: $blanco;
+    background-color: $fondo-titular;
     background-size: cover;
     background-attachment: scroll;
     height: calc($alto-completo - 6rem);
@@ -56,6 +56,7 @@
     .botonera {
 
         #button {
+
             background-color: $fondo-titular;
             color: $blanco;
             width: $ancho-boton;
@@ -84,6 +85,7 @@
     }
 
     .panel {
+
         background-color: $negro-transparencia;
         color: white;
         width: calc($ancho-completo / 3);
@@ -94,7 +96,30 @@
         align-items: center;
         font-family: $fuente-cuerpo;
         font-weight: $letra-bold;
+        font-size: $letra-logo;
         cursor: default;
+
+        .img-perfil {
+
+            width: calc(2 * $estandar-img-size-em);
+            height: calc(2 * $estandar-img-size-em);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+
+        .parrafo {
+            padding: 0 $estandar-padding-em;
+            font-family: $fuente-cuerpo;
+            font-size: calc($letra-logo - 1.2px);
+            font-style: $letra-italic;
+            letter-spacing: $espaciado-letras;
+            line-height: $altura-linea-texto;
+            margin: calc($estandar-margin-em / 1.5);
+        }
+
     }
 
     #nombre::selection,
@@ -105,4 +130,5 @@
         background-color: $fondo-titular;
         color: $blanco;
     }
+
 }
