@@ -111,6 +111,7 @@
         }
 
         .parrafo {
+            width: 100%;
             padding: 0 $estandar-padding-em;
             font-family: $fuente-cuerpo;
             font-size: calc($letra-logo - 1.2px);
@@ -118,6 +119,23 @@
             letter-spacing: $espaciado-letras;
             line-height: $altura-linea-texto;
             margin: calc($estandar-margin-em / 1.5);
+            text-align: left;
+        }
+
+        ul {
+
+            width: 100%;
+
+            li {
+                width: 100%;
+                display: flex;
+
+                i {
+                    width: 20%;
+                    text-align: center;
+                    padding-right: 1em;
+                }
+            }
         }
 
     }
@@ -132,3 +150,5 @@
     }
 
 }
+
+@import "./_contenedor_proyectos"

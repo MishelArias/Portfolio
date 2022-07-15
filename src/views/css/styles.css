@@ -527,6 +527,7 @@ body #contenedor #logo #cargo {
     -o-border-radius: 50%;
   }
   body #contenedor .panel .parrafo {
+    width: 100%;
     padding: 0 1em;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 15.3px;
@@ -534,6 +535,19 @@ body #contenedor #logo #cargo {
     letter-spacing: 1px;
     line-height: 24px;
     margin: 0.6666666667em;
+    text-align: left;
+  }
+  body #contenedor .panel ul {
+    width: 100%;
+  }
+  body #contenedor .panel ul li {
+    width: 100%;
+    display: flex;
+  }
+  body #contenedor .panel ul li i {
+    width: 20%;
+    text-align: center;
+    padding-right: 1em;
   }
   body #contenedor #nombre::selection,
 body #contenedor #cargo::selection,
@@ -541,6 +555,53 @@ body #contenedor #introduccion::selection,
 body #contenedor #button::selection {
     background-color: #3D0000;
     color: #F5F5F5;
+  }
+  body #contenedor-proyectos {
+    background-color: #3D0000;
+    height: calc(100vh - 6rem);
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  body #contenedor-proyectos .panel {
+    position: relative;
+    background-color: #3D0000;
+    color: white;
+    width: 100%;
+    height: calc(100vh - 6rem);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 16.5px;
+    cursor: default;
+    border-bottom: 10px solid #3D0000;
+  }
+  body #contenedor-proyectos .panel .img-proyecto {
+    width: 100%;
+    height: calc(100vh - 6rem);
+  }
+  body #contenedor-proyectos .panel .descripcion-proyecto {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: white;
+    width: 100%;
+    height: calc(100vh - 6rem);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14.8px;
+    line-height: 24px;
+  }
+  body #contenedor-proyectos .panel .descripcion-proyecto .descripcion {
+    width: 50%;
   }
 }
 

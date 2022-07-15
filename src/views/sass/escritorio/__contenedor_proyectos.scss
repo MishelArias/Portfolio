@@ -1,0 +1,54 @@
+#contenedor-proyectos {
+    background-color: $fondo-titular;
+    height: calc($alto-completo - 6rem);
+    width: $ancho-completo;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+
+    .panel{
+
+        position: relative;
+        background-color: $fondo-titular;
+        color: white;
+        width: $ancho-completo;
+        height: calc($alto-completo - $altura-cabecera);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        font-family: $fuente-cuerpo;
+        font-weight: $letra-bold;
+        font-size: $letra-logo;
+        cursor: default;
+        border-bottom: 10px solid $fondo-titular;
+
+        .img-proyecto {
+            width: $ancho-completo;
+            height: calc($alto-completo - $altura-cabecera);
+            
+        }
+        
+        .descripcion-proyecto{
+            position: absolute;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background-color: $negro-transparencia;
+            color: white;
+            width: $ancho-completo;
+            height: calc($alto-completo - $altura-cabecera);
+            font-family: $fuente-cuerpo;
+            font-size: calc($letra-logo - 1.7px);
+            line-height: $altura-linea-texto;
+            
+            .descripcion{
+
+                width: calc($ancho-completo / 2);
+            }
+        }
+    }
+}
